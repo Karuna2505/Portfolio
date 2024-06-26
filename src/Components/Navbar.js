@@ -23,6 +23,7 @@ const Navbar = () => {
     <nav className="h-auto overflow-hidden z-10  mt-6 ">
       {isMobile ? (
         <div className="flex justify-between">
+
         <div className="flex px-4">
         <img src={icon} alt="icon" className="h-12 mt-2 cursor-pointer" />
         <img src={icon} alt="icon" className="h-12 mt-2 cursor-pointer" />

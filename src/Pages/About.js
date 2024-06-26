@@ -17,7 +17,7 @@ function About() {
         staying active with sports like table tennis. These hobbies help me
         maintain a healthy work-life balance and fuel my passion for innovation
         and problem-solving.</h1>
-        <a href="https://drive.google.com/file/d/1zfoUt7KwqNzwsl_OgQyr6zeNKgTuDW5g/view?usp=sharing" className="w-32  text-xl bg-[#DAD3BE]  text-[#254336] rounded-full p-2 mb-14 mt-10 text-center hover:bg-[#254336] hover:text-[#DAD3BE]">RESUME</a>
+        <a href="https://drive.google.com/file/d/1zfoUt7KwqNzwsl_OgQyr6zeNKgTuDW5g/view?usp=sharing" target="_blank"rel="noreferrer" className="w-32  text-xl bg-[#DAD3BE]  text-[#254336] rounded-full p-2 mb-14 mt-10 text-center hover:bg-[#254336] hover:text-[#DAD3BE]">RESUME</a>
         
     </div>
   );

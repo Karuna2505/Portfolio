@@ -7,10 +7,6 @@ body{
   background-color: #DAD3BE;
 }
 
-.one{
-  animation: animate 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
-}
 
 .effect:hover{
   font-weight: 700;
@@ -72,11 +68,3 @@ body{
   transform: translate3d(0, 0, -1em);
  }
 
-@keyframes animate{
-  0%,100%{
-    border-radius: 70% 30% 30% 70% / 70% 30% 70% 40%;
-  }
-  50%{
-    border-radius: 20% 60% 70% 40% / 50% 70% 30% 60%;
-  }
-}

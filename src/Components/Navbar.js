@@ -1,18 +1,20 @@
+// Navbar.js
 import React from 'react';
-import icon from '../Assets/icon.png';
+import icon from "../Assets/icon.png";
+
 const Navbar = () => {
+
   return (
-    <nav className="flex justify-center mt-8">
-    
-    <img src={icon} alt="icon" className='h-12'/>
-    <img src={icon} alt="icon" className='h-12'/>
-      <div className='w-3/5 h-16 ml-6'>
-        <ul className='flex justify-evenly text-[#254336] font-semibold text-lg'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+    <nav className="h-auto shadow-md z-10 flex justify-center items-center py-4 ">
+      <img src={icon} alt="icon" className="h-12 mt-3" />
+      <img src={icon} alt="icon" className="h-12 mt-3" />
+      <div className="w-2/5 ml-52">
+        <ul className="flex justify-evenly text-[#254336] font-semibold text-lg ">
+        <li><a href="#home" className='effect cursor-pointer'>Home</a></li>
+        <li><a href="#about" className='effect cursor-pointer'>About</a></li>
+        <li><a href="#skills" className='effect cursor-pointer'>Skills</a></li>
+        <li><a href="#projects" className='effect cursor-pointer'>Projects</a></li>
+        <li><a href="#contact" className=' effect cursor-pointer'>Contact</a></li>
         </ul>
       </div>
     </nav>

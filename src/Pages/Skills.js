@@ -11,13 +11,12 @@ const skillsData = [
     { id: 8, title: 'Git', image: '/git.png',description:'git is a version control system.'},
     { id: 9, title: "Github", image:'/github.png' , description: 'github is a storage'},
     { id: 10, title: 'Sql',image:'/sql.png',description: "Structured Query Language to maintain,update and retrieve data."},
-    // Add more skills as needed
   ];
 
 function Skills() {
   return (
-    <div className="h-auto flex flex-col items-center">
-      <h1 className="text-5xl text-[#254336] font-bold mt-10">SKILLS</h1>
+    <div id="skills" className="h-auto flex flex-col items-center">
+      <h1 className="text-5xl text-[#254336] font-bold mt-14">SKILLS</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-4 mt-6">
         {skillsData.map(skill => (
           <Skill

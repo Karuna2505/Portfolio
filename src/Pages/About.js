@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div className="h-[30rem] bg-[#6B8A7A] flex flex-col items-center">
-      <h1 className="text-[#e3decf] font-bold text-5xl mt-10">ABOUT ME</h1>
+    <div id="about" className="h-auto bg-[#6B8A7A] flex flex-col items-center">
+      <h1 className="text-[#e3decf] font-bold text-5xl mt-14">ABOUT ME</h1>
       <h1 className="text-[#DAD3BE] font-normal text-xl w-4/5 mt-9 m-6">
         Hi! I'm Karuna, a web developer and recent graduate from Netaji Subhas
         University of Technology. Although I'm a fresher, I've already gained
@@ -17,7 +17,7 @@ function About() {
         staying active with sports like table tennis. These hobbies help me
         maintain a healthy work-life balance and fuel my passion for innovation
         and problem-solving.</h1>
-        <a href="https://drive.google.com/file/d/1zfoUt7KwqNzwsl_OgQyr6zeNKgTuDW5g/view?usp=sharing" className="text-xl bg-[#254336] p-3 text-[#DAD3BE] rounded-xl mt-9">RESUME</a>
+        <a href="https://drive.google.com/file/d/1zfoUt7KwqNzwsl_OgQyr6zeNKgTuDW5g/view?usp=sharing" className="text-xl bg-[#254336] p-3 text-[#DAD3BE] rounded-xl mb-14 mt-10">RESUME</a>
         
     </div>
   );

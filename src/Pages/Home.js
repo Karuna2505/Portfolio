@@ -2,8 +2,8 @@ import React from 'react'
 import image from "../Assets/image.jpg";
 function Home() {
   return (
-    <div className='h-[30rem] '>
-     <div className='flex justify-evenly'>
+    <div id="home" className='h-auto pb-12'>
+     <div className='flex justify-evenly mt-4'>
 
      <div className='mt-16 ml-12 text-[#254336]'>
      <h1 className='font-bold text-6xl m-8'>Hello!,I'm</h1>

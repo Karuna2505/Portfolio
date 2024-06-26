@@ -3,7 +3,7 @@ import image from "../Assets/image.jpg";
 function Home() {
   return (
     <div id="home" className='h-auto pb-12'>
-     <div className='flex justify-evenly mt-4'>
+     <div className='flex flex-col  items-center mt-4 md:flex-row md:justify-evenly'>
 
      <div className='mt-16 ml-12 text-[#254336]'>
      <h1 className='font-bold text-6xl m-8'>Hello!,I'm</h1>

@@ -7,10 +7,12 @@ import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
 import Contact from './Pages/Contact';
 import ScrollUp from './Components/ScrollUp';
+import Links from './Components/Links';
 function App() {
   return (
     <div>
       <ScrollUp />
+      <Links />
       <Navbar />
       <Home />
       <About />

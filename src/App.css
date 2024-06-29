@@ -68,3 +68,10 @@ body{
   transform: translate3d(0, 0, -1em);
  }
 
+ .icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateX(-10px);
+}

@@ -13,7 +13,7 @@ function Projects() {
   return (
     <div id='projects' className='h-auto bg-[#6B8A7A] flex flex-col items-center'>
       <h1 className='text-5xl text-[#e3decf] font-bold mt-14'>Projects</h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 m-6'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 m-6 sm:mx-10'>
       {projectsData.map(project => (
           <Project
             key={project.id}

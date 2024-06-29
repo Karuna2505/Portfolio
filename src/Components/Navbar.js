@@ -25,11 +25,11 @@ const Navbar = () => {
         <div className="flex justify-between">
 
         <div className="flex px-4">
-        <img src={icon} alt="icon" className="h-12 mt-2 cursor-pointer" />
-        <img src={icon} alt="icon" className="h-12 mt-2 cursor-pointer" />
+        <img src={icon} alt="icon" className="h-9 sm:h-12 mt-2 cursor-pointer" />
+        <img src={icon} alt="icon" className="h-9 sm:h-12 mt-2 cursor-pointer" />
       </div>
-        <button onClick={handleMenu} className="mx-4 h-10 w-10 ">
-          <img src={menu ? "/cancel.png" : "/menu.png"} alt="menu-button" className="h-12 w-12"/>
+        <button onClick={handleMenu} className="mx-4 h-10 w-10">
+          <img src={menu ? "/cancel.png" : "/menu.png"} alt="menu-button" className="h-8 w-8 sm:h-12 sm:w-12"/>
         </button>
         </div>
       ) : (

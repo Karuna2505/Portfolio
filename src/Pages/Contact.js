@@ -1,7 +1,39 @@
-import React from 'react';
-import ContactDiv from '../Components/contactdiv';
+import React,{useState} from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    emailjs.send('service_omr6eh6', 'template_5pp4x4j', formData, 'ComhM_f-MKPYsLDWw')
+      .then((result) => {
+        console.log(result.text);
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log(error.text);
+        alert('Failed to send the message. Please try again later.');
+      });
+
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
   return (
     <div id='contact' className='h-auto flex flex-col items-center'>
       <h1 className='font-bold text-5xl text-[#254336] m-14'>Contact Me</h1>
@@ -24,13 +56,19 @@ function Contact() {
           </div>
         </div>
         <div className='m-16 w-4/6 xl:w-2/6'>
-        <ContactDiv title='Name'/>
-        <ContactDiv title='Email'/>
+        <div className='flex flex-col items-start'>
+      <label className='text-2xl text-[#DAD3BE] font-semibold'>Name</label>
+      <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="name" className='h-9 mt-4 mb-8 border-0 bg-inherit border-b-2 border-[#254336] text-black w-48 placeholder:text-[#00000099] sm:w-60'/>
+    </div>
+    <div className='flex flex-col items-start'>
+      <label className='text-2xl text-[#DAD3BE] font-semibold'>Email</label>
+      <input type="text" name="email" value={formData.email} onChange={handleChange} required placeholder="email" className='h-9 mt-4 mb-8 border-0 bg-inherit border-b-2 border-[#254336] text-black w-48 placeholder:text-[#00000099] sm:w-60'/>
+    </div>
       <div className='flex flex-col  items-start'>
       <label className='text-2xl text-[#DAD3BE] font-semibold'>Message</label>
-      <textarea placeholder='Message' type='text'  maxLength={100} className='h-20 mt-6 mb-14 w-56 sm:w-72 resize-none bg-inherit border-2 border-[#254336] placeholder:text-[#00000099] p-2'/>
+      <textarea name="message" value={formData.message} onChange={handleChange} required placeholder='Message' type='text'  maxLength={100} className='h-20 mt-6 mb-14 w-56 sm:w-72 resize-none bg-inherit border-2 border-[#254336] placeholder:text-[#00000099] p-2'/>
       </div>
-      <button className='px-6 py-3 bg-[#DAD3BE] font-bold text-lg text-[#254336] rounded-3xl hover:bg-[#254336] hover:text-[#DAD3BE]'>SEND</button>
+      <button onClick={handleSubmit} className='px-6 py-3 bg-[#DAD3BE] font-bold text-lg text-[#254336] rounded-3xl hover:bg-[#254336] hover:text-[#DAD3BE]'>SEND</button>
         </div>
       </div>
       

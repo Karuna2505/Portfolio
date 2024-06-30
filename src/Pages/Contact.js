@@ -55,7 +55,7 @@ function Contact() {
           </div>
           </div>
         </div>
-        <div className='m-16 w-4/6 xl:w-2/6'>
+        <form className='m-16 w-4/6 xl:w-2/6' onSubmit={handleSubmit}>
         <div className='flex flex-col items-start'>
       <label className='text-2xl text-[#DAD3BE] font-semibold'>Name</label>
       <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="name" className='h-9 mt-4 mb-8 border-0 bg-inherit border-b-2 border-[#254336] text-black w-48 placeholder:text-[#00000099] sm:w-60'/>
@@ -68,8 +68,8 @@ function Contact() {
       <label className='text-2xl text-[#DAD3BE] font-semibold'>Message</label>
       <textarea name="message" value={formData.message} onChange={handleChange} required placeholder='Message' type='text'  maxLength={100} className='h-20 mt-6 mb-14 w-56 sm:w-72 resize-none bg-inherit border-2 border-[#254336] placeholder:text-[#00000099] p-2'/>
       </div>
-      <button onClick={handleSubmit} className='px-6 py-3 bg-[#DAD3BE] font-bold text-lg text-[#254336] rounded-3xl hover:bg-[#254336] hover:text-[#DAD3BE]'>SEND</button>
-        </div>
+      <button type='submit' className='px-6 py-3 bg-[#DAD3BE] font-bold text-lg text-[#254336] rounded-3xl hover:bg-[#254336] hover:text-[#DAD3BE]'>SEND</button>
+        </form>
       </div>
       
     </div>

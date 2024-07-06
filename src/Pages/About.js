@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div id="about" className="h-auto bg-[#6B8A7A] flex flex-col items-center">
-      <h1 className="text-[#e3decf] font-bold text-5xl mt-14">ABOUT ME</h1>
+      <h1 className="text-[#e3decf] font-bold text-5xl mt-14">About Me</h1>
       <h1 className="text-[#DAD3BE] font-normal text-xl w-4/5 mt-9 m-6">
         Hi! I'm Karuna, a web developer and recent graduate from Netaji Subhas
         University of Technology. Although I'm a fresher, I've already gained
